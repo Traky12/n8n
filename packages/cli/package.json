@@ -198,7 +198,7 @@
     "undici": "^7.16.0",
     "uuid": "catalog:",
     "validator": "13.15.22",
-    "ws": "8.17.1",
+    "ws": "8.20.1",
     "xml2js": "catalog:",
     "xmllint-wasm": "3.0.1",
     "xss": "catalog:",
