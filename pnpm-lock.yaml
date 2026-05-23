@@ -178,8 +178,8 @@ catalogs:
       specifier: ^4.19.3
       version: 4.19.3
     uuid:
-      specifier: 10.0.0
-      version: 10.0.0
+      specifier: 14.0.0
+      version: 14.0.0
     vite:
       specifier: npm:rolldown-vite@latest
       version: 7.3.1
@@ -850,7 +850,7 @@ importers:
         version: 0.2.2
       uuid:
         specifier: 'catalog:'
-        version: 10.0.0
+        version: 14.0.0
     devDependencies:
       '@n8n/typescript-config':
         specifier: workspace:*
@@ -1134,7 +1134,7 @@ importers:
         version: 0.2.2
       uuid:
         specifier: 'catalog:'
-        version: 10.0.0
+        version: 14.0.0
       xss:
         specifier: 'catalog:'
         version: 1.0.15
@@ -1999,7 +1999,7 @@ importers:
         version: link:../../workflow
       uuid:
         specifier: 'catalog:'
-        version: 10.0.0
+        version: 14.0.0
       zod:
         specifier: 3.25.67
         version: 3.25.67
@@ -2327,7 +2327,7 @@ importers:
         version: 7.18.2
       uuid:
         specifier: 'catalog:'
-        version: 10.0.0
+        version: 14.0.0
       validator:
         specifier: 13.15.26
         version: 13.15.26
@@ -2568,7 +2568,7 @@ importers:
         version: 1.15.0
       uuid:
         specifier: 'catalog:'
-        version: 10.0.0
+        version: 14.0.0
       winston:
         specifier: 3.14.2
         version: 3.14.2
@@ -2660,7 +2660,7 @@ importers:
         version: 4.0.1
       uuid:
         specifier: 'catalog:'
-        version: 10.0.0
+        version: 14.0.0
       vue:
         specifier: catalog:frontend
         version: 3.5.26(typescript@5.9.2)
@@ -3377,7 +3377,7 @@ importers:
         version: 5.9.2
       uuid:
         specifier: 'catalog:'
-        version: 10.0.0
+        version: 14.0.0
       v-code-diff:
         specifier: ^1.13.1
         version: 1.13.1(patch_hash=21588de80e591bbc1e5a068d9bce311db5254686443652945d2c7887fdafe9d9)(vue@3.5.26(typescript@5.9.2))
@@ -3784,7 +3784,7 @@ importers:
         version: 1.2.2(date-fns@2.30.0)(lodash@4.17.23)(zod@3.25.67)
       uuid:
         specifier: 'catalog:'
-        version: 10.0.0
+        version: 14.0.0
       vm2:
         specifier: 'catalog:'
         version: 3.11.5
@@ -4104,7 +4104,7 @@ importers:
         version: 2.3.5
       uuid:
         specifier: 'catalog:'
-        version: 10.0.0
+        version: 14.0.0
       xml2js:
         specifier: 'catalog:'
         version: 0.6.2
@@ -19434,6 +19434,10 @@ packages:
     resolution: {integrity: sha512-XQegIaBTVUjSHliKqcnFqYypAd4S+WCYt5NIeRs6w/UAry7z8Y9j5ZwRRL4kzq9U3sD6v+85er9FvkEaBpji2w==}
     hasBin: true
 
+  uuid@14.0.0:
+    resolution: {integrity: sha512-Qo+uWgilfSmAhXCMav1uYFynlQO7fMFiMVZsQqZRMIXp0O7rR7qjkj+cPvBHLgBqi960QCoo/PH2/6ZtVqKvrg==}
+    hasBin: true
+
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
@@ -19789,8 +19793,8 @@ packages:
   vue-component-type-helpers@2.2.12:
     resolution: {integrity: sha512-YbGqHZ5/eW4SnkPNR44mKVc6ZKQoRs/Rux1sxC6rdwXb4qpbOSYfDr9DsTHolOTGmIKgM9j141mZbBeg05R1pw==}
 
-  vue-component-type-helpers@3.2.9:
-    resolution: {integrity: sha512-S3BiWYaLSzHxTpln665ELSrMR9UYmrIDUmhik7nVZxmJjTKL2/a+ew1hvGxksKelivm0ujjWfG1fYOiU/2e8rA==}
+  vue-component-type-helpers@3.3.1:
+    resolution: {integrity: sha512-pu58kqxmVyEH6VfNYW1UyEfR3XAnJ27ZXT3yzXxxpjLxVzAbyC35Zk/nm/RMs7ijWnJNSd9fWkeex2OhUsx3MA==}
 
   vue-demi@0.14.10:
     resolution: {integrity: sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==}
@@ -28520,7 +28524,7 @@ snapshots:
       storybook: 10.1.11(@testing-library/dom@10.4.0)(bufferutil@4.0.9)(prettier@3.6.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(utf-8-validate@5.0.10)
       type-fest: 2.19.0
       vue: 3.5.26(typescript@5.9.2)
-      vue-component-type-helpers: 3.2.9
+      vue-component-type-helpers: 3.3.1
 
   '@stylistic/eslint-plugin@5.0.0(eslint@9.29.0(jiti@2.6.1))':
     dependencies:
@@ -40919,6 +40923,8 @@ snapshots:
 
   uuid@13.0.0: {}
 
+  uuid@14.0.0: {}
+
   uuid@8.3.2: {}
 
   uuid@9.0.1: {}
@@ -41366,7 +41372,7 @@ snapshots:
 
   vue-component-type-helpers@2.2.12: {}
 
-  vue-component-type-helpers@3.2.9: {}
+  vue-component-type-helpers@3.3.1: {}
 
   vue-demi@0.14.10(vue@3.5.26(typescript@5.9.2)):
     dependencies:
