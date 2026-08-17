@@ -80,3 +80,27 @@ This repository does not by itself claim production operation, certification, in
 
 See [`docs/CASTUO_PUBLIC_SURFACE.md`](docs/CASTUO_PUBLIC_SURFACE.md) for the public boundary. `Claim != Evidence`; `CURRENT != TARGET`; promotion requires control-plane authorization.
 <!-- CASTUO:PUBLIC-SURFACE-END -->
+
+<!-- CASTUO:PUBLIC-GOVERNANCE:START -->
+## CASTÚO-SYSTEM governed public surface
+
+**Repository role:** `UPSTREAM INTEGRATION`<br>
+**Scope statement:** Upstream automation technology integrated or evaluated by CASTÚO; upstream capability is not automatically CASTÚO-owned.
+**Public state:** `EVIDENCE-SCOPED · STAGING-CANDIDATE · PROMOTION-BLOCKED`
+
+This repository is a governed surface of CASTÚO-SYSTEM. The canonical governance source is [`castuo-evolution`](https://github.com/Traky12/castuo-evolution); the public Knowledge & Evidence Index is a read-model. Repository activity, a README, commit, pull request or passing local workflow does not by itself establish remote operation, production, certification, customers, revenue or regulatory conformity.
+
+**Boundary:** Upstream boundary / no proprietary claim.
+
+| Layer | Public meaning |
+|---|---|
+| Documented | Scope, design or policy is described. |
+| Implemented local | Implementation exists within declared local scope. |
+| Tested local | A local test passed within its declared scope. |
+| Evidence-scoped | Evidence surfaces and limitations are identified. |
+| Operational / production | `NOT_CLAIMED` unless separately evidenced and reviewed. |
+
+For public navigation use the [Traky12 profile](https://github.com/Traky12/Traky12), the [Evidence Center](https://github.com/Traky12/Traky12/tree/proof-matrix-profile/docs/evidence) and the [Public Knowledge & Evidence Index](https://castuo-system.es/).
+
+`Identity != Documentation != Evidence != Execution != Review != Promotion`
+<!-- CASTUO:PUBLIC-GOVERNANCE:END -->
