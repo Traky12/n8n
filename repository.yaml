@@ -1,0 +1,42 @@
+id: CASTUO-REPOSITORY-N8N
+name: n8n
+class: UPSTREAM
+visibility: UPSTREAM
+owner: Traky12
+parent_system: CASTUO-SYSTEM
+lifecycle: UPSTREAM
+scope: upstream workflow automation integration
+current_state: CANDIDATE
+assurance_level: L0_CONTRACT_DEFINED
+evidence_state: EVIDENCE_PENDING
+production_claim: NOT_CLAIMED
+relationships:
+  upstream: [n8n-io/n8n]
+  downstream: [Castuo-system]
+  peers: []
+claims_blocked:
+  - production
+  - certification
+  - independent_validation
+  - autonomous_authority
+  - commercial_validation
+  - federation
+metadata_source: CASTUO-REPOSITORY-STANDARD-V1.0
+repository: n8n
+purpose: upstream workflow automation integration
+environment: STAGING
+implementation_state: CANDIDATE
+security_state: EVIDENCE_PENDING
+promotion_state: PROMOTION_BLOCKED
+claims_allowed:
+  - documented repository role within declared scope
+claims_blocked:
+  - production
+  - certification
+  - independent_validation
+  - autonomous_authority
+  - commercial_validation
+  - federation
+dependencies: []
+upstream: [n8n-io/n8n]
+downstream: [Castuo-system]
