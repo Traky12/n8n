@@ -7,6 +7,11 @@ packages:
 
 catalogMode: strict
 
+overrides:
+  brace-expansion@1: 1.1.18
+  brace-expansion@2: 2.1.4
+  brace-expansion@5: 5.0.9
+
 catalog:
   '@azure/identity': 4.13.0
   '@codemirror/autocomplete': 6.20.0
