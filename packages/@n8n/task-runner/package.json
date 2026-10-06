@@ -48,7 +48,7 @@
     "n8n-core": "workspace:*",
     "n8n-workflow": "workspace:*",
     "nanoid": "catalog:",
-    "ws": "^8.18.0"
+    "ws": "^8.22.0"
   },
   "devDependencies": {
     "@n8n/eslint-config": "workspace:*",
