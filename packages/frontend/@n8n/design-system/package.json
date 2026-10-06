@@ -75,7 +75,7 @@
     "autoprefixer": "catalog:frontend",
     "eslint-plugin-storybook": "catalog:storybook",
     "pinia": "catalog:frontend",
-    "postcss": "^8.4.38",
+    "postcss": "^8.5.29",
     "sass": "^1.71.1",
     "storybook": "catalog:storybook",
     "storybook-addon-vue-mdx": "3.0.0",
