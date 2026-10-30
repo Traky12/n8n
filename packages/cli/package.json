@@ -292,7 +292,7 @@
     "turndown": "catalog:",
     "uuid": "catalog:",
     "validator": "catalog:",
-    "ws": "8.20.1",
+    "ws": "8.22.0",
     "xml2js": "catalog:",
     "xmllint-wasm": "3.0.1",
     "yaml": "catalog:",

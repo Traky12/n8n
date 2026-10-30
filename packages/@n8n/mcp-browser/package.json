@@ -33,7 +33,7 @@
     "picocolors": "catalog:",
     "playwright-core": "catalog:",
     "turndown": "catalog:",
-    "ws": "8.20.1",
+    "ws": "8.22.0",
     "yargs-parser": "21.1.1",
     "zod": "catalog:"
   },
