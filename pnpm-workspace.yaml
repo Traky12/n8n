@@ -194,7 +194,7 @@ catalog:
   '@vitest/coverage-v8': 5.0.1
   agent-browser: 0.26.0
   ai: ^7.0.150
-  axios: 1.20.0
+  axios: 1.21.0
   basic-auth: 2.0.1
   cache-manager: 5.2.3
   callsites: 3.1.0
@@ -252,7 +252,7 @@ catalog:
   mysql2: 3.23.1
   nanoid: 3.3.18
   nock: 14.0.14
-  nodemailer: 10.0.14
+  nodemailer: 10.1.4
   openai: 6.46.0
   oracledb: 6.10.0
   oxlint: 1.78.0
@@ -371,7 +371,7 @@ catalogs:
     '@typescript/native': 'npm:typescript@7.0.2'
     typescript: 'npm:@typescript/typescript6@6.0.2'
   undici-v6:
-    undici: ^6.28.1
+    undici: ^6.29.1
   undici-v7:
     undici: ^7.30.1
   # knip needs zod 4 while the default catalog pins zod 3.
@@ -413,7 +413,7 @@ overrides:
   pdf-parse: 'catalog:'
   pdfjs-dist: 'catalog:'
   tmp: 0.2.7
-  nodemailer: 10.0.14
+  nodemailer: 10.1.4
   validator: 'catalog:'
   zod: 3.25.76
   # Scoped to knip so the repo-wide zod 3 pin stays for everything else.
