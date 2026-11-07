@@ -214,7 +214,7 @@ catalogs:
       version: 1.0.150
     '@ai-sdk/provider-utils':
       specifier: ^5.0.67
-      version: 5.0.67
+      version: 5.0.70
     '@ai-sdk/xai':
       specifier: ^4.0.59
       version: 4.0.59
@@ -672,8 +672,8 @@ catalogs:
       specifier: 3.7.2
       version: 3.7.2
     markdown-it:
-      specifier: ^13.0.2
-      version: 13.0.2
+      specifier: ^14.3.3
+      version: 14.3.3
     markdown-it-link-attributes:
       specifier: ^4.0.1
       version: 4.0.1
@@ -998,7 +998,7 @@ overrides:
   pdf-parse: 2.4.5
   pdfjs-dist: 6.3.289
   tmp: 0.2.7
-  nodemailer: 10.0.14
+  nodemailer: 10.1.4
   validator: 13.15.26
   zod: 3.25.76
   knip>zod: ^4.4.3
@@ -1071,8 +1071,8 @@ overrides:
   '@turbo/linux-64@<=2.9.18': 2.9.18
   '@turbo/windows-64@<=2.9.18': 2.9.18
   ibm-cloud-sdk-core: ^5.5.0
-  undici@5: ^6.29.1
-  undici@6: ^6.29.1
+  undici@5: ^8.12.4
+  undici@6: ^8.12.4
   undici@7: ^7.30.1
   node-gyp>undici: ^7.30.1
   '@babel/traverse@<7.23.2': ^7.23.2
@@ -1250,7 +1250,7 @@ importers:
         version: 1.0.150(zod@3.25.76)
       '@ai-sdk/provider-utils':
         specifier: 'catalog:'
-        version: 5.0.67(zod@3.25.76)
+        version: 5.0.70(zod@3.25.76)
       '@ai-sdk/xai':
         specifier: 'catalog:'
         version: 4.0.59(zod@3.25.76)
@@ -1289,7 +1289,7 @@ importers:
         version: 2.10.0(@opentelemetry/api@1.9.1)
       '@opentelemetry/sdk-trace-node':
         specifier: '>=1.0.0'
-        version: 2.11.0(@opentelemetry/api@1.9.1)
+        version: 2.10.0(@opentelemetry/api@1.9.1)
       ai:
         specifier: 'catalog:'
         version: 7.0.150(zod@3.25.76)
@@ -5109,8 +5109,8 @@ importers:
         specifier: 'catalog:'
         version: 3.3.18
       nodemailer:
-        specifier: 10.0.14
-        version: 10.0.14
+        specifier: 10.1.4
+        version: 10.1.4
       oauth-1.0a:
         specifier: 2.2.6
         version: 2.2.6
@@ -5613,7 +5613,7 @@ importers:
         version: 11.12.0
       markdown-it:
         specifier: 'catalog:'
-        version: 13.0.2
+        version: 14.3.3
       markdown-it-link-attributes:
         specifier: 'catalog:'
         version: 4.0.1
@@ -5861,7 +5861,7 @@ importers:
         version: 4.18.1(patch_hash=0384abb0bf57b0811e09219dbce0b926741d818285ee77526ad4cb75a60b87a1)
       markdown-it:
         specifier: 'catalog:'
-        version: 13.0.2
+        version: 14.3.3
       markdown-it-emoji:
         specifier: ^2.0.2
         version: 2.0.2
@@ -6906,7 +6906,7 @@ importers:
         version: 3.7.2
       markdown-it:
         specifier: 'catalog:'
-        version: 13.0.2
+        version: 14.3.3
       markdown-it-footnote:
         specifier: ^4.0.0
         version: 4.0.0
@@ -8615,8 +8615,8 @@ importers:
         specifier: 13.2.0
         version: 13.2.0
       nodemailer:
-        specifier: 10.0.14
-        version: 10.0.14
+        specifier: 10.1.4
+        version: 10.1.4
       oracledb:
         specifier: 'catalog:'
         version: 6.10.0
@@ -8988,7 +8988,7 @@ importers:
         version: 3.3.3
       markdown-it:
         specifier: 'catalog:'
-        version: 13.0.2
+        version: 14.3.3
       ts-morph:
         specifier: 'catalog:'
         version: 27.0.2
@@ -14575,10 +14575,16 @@ packages:
   '@smithy/core@3.33.2':
     resolution: {integrity: sha512-CUGXpnPkVdjUCbix+83sWLW9VFgQOm44MDOx/ihITJMAnOZKvL8YYIc7DR9pP/tZ8CIRvMiON/TucvygqbHO3w==}
     engines: {node: '>=18.0.0'}
+    deprecated: |-
+      Deprecated due to a bug in custom logger data redaction. Upgrade to the latest version. If you used a custom logger with this
+        version, review your logs and rotate any credentials or other secrets. See https://github.com/aws/aws-sdk-js-v3/issues/8393.
 
   '@smithy/core@3.34.1':
     resolution: {integrity: sha512-dLcOUxz8YCv1RZUMKq6GbyUf95pLbrqh34bPvpCZ1+CByFF31BEAFewZjsGCnVsZTKdThNENfGyAgk2TJqVwSw==}
     engines: {node: '>=18.0.0'}
+    deprecated: |-
+      Deprecated due to a bug in custom logger data redaction. Upgrade to the latest version. If you used a custom logger with this
+        version, review your logs and rotate any credentials or other secrets. See https://github.com/aws/aws-sdk-js-v3/issues/8393.
 
   '@smithy/credential-provider-imds@4.2.5':
     resolution: {integrity: sha512-BZwotjoZWn9+36nimwm/OLIcVe+KYRwzMjfhd4QT7QxPm9WY0HiOV8t/Wlh+HVUif0SBVV7ksq8//hPaBC/okQ==}
@@ -14726,6 +14732,9 @@ packages:
   '@smithy/smithy-client@4.12.7':
     resolution: {integrity: sha512-q3gqnwml60G44FECaEEsdQMplYhDMZYCtYhMCzadCnRnnHIobZJjegmdoUo6ieLQlPUzvrMdIJUpx6DoPmzANQ==}
     engines: {node: '>=18.0.0'}
+    deprecated: |-
+      Deprecated due to a bug in custom logger data redaction. Upgrade to the latest version. If you used a custom logger with
+        this version, review your logs and rotate any credentials or other secrets. See https://github.com/aws/aws-sdk-js-v3/issues/8393.
 
   '@smithy/types@1.2.0':
     resolution: {integrity: sha512-z1r00TvBqF3dh4aHhya7nz1HhvCg4TRmw51fjMrh5do3h+ngSstt/yKlNbHeb9QxJmFbmN8KEVSWgb1bRvfEoA==}
@@ -16746,6 +16755,7 @@ packages:
   alasql@4.4.0:
     resolution: {integrity: sha512-EQOk3NEvKcQxoYeY0d4ePF0VHAcljx3pn5ZkEowMPRThjWXyDc/VHYqC8Sg+6BH2ZhKZBdeRqlvlgZmhfGBtDA==}
     engines: {node: '>=15'}
+    deprecated: There is a new patch version of AlaSQL for you. Bump to v4.4.1 to avoid a security issue. It's a safe bump - we only added the patch so it's fully feature-stable.
     hasBin: true
 
   alien-signals@1.0.4:
@@ -20877,6 +20887,10 @@ packages:
     resolution: {integrity: sha512-FtwnEuuK+2yVU7goGn/MJ0WBZMM9ZPgU9spqlFs7/A/pDIUNSOQZhUgOqYCficIuR2QaFnrt8LHqBWsbTAoI5w==}
     hasBin: true
 
+  markdown-it@14.3.3:
+    resolution: {integrity: sha512-L//tDAkjTjJCU6pBUSBTgs3Kg4InVaZuUZog/b6V12UKhcDQ7S78877ibbCanRExwPuYP1CZD7Gd2dxSy1GXRg==}
+    hasBin: true
+
   markdown-table@3.0.4:
     resolution: {integrity: sha512-wiYz4+JrLyb/DqW2hkFJxP7Vd7JuTDm77fvbM8VfEQdmSMqcImWeeRbHwZjBjIFki/VaMK2BhFi7oUUZeM5bqw==}
 
@@ -20950,6 +20964,9 @@ packages:
 
   mdurl@1.0.1:
     resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
+
+  mdurl@2.1.0:
+    resolution: {integrity: sha512-1+HBaOx0zi/dQWht8rNv9MYf9qqpqL/kxI0hXImU6Y547zM6Sni8BQibt7ifgMcYtQg41ao3Ivd6cnSM86inpg==}
 
   media-typer@0.3.0:
     resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==}
@@ -21691,8 +21708,8 @@ packages:
     resolution: {integrity: sha512-7vsKR2Bbs66th6IWCy/7SN4MSwlVt+G6QrHB631BjRUM8/LmvDugtYhi0uAmgvHS/+PVurfNBOmELf30rm0MZg==}
     engines: {node: '>= 10'}
 
-  nodemailer@10.0.14:
-    resolution: {integrity: sha512-eJoLFKg55fesSlzUekmfOv/SBXh4KUYT8oiQc2RLP0tfG0rbNMJBK7wgHJwXTJwqyKlSJMz9UzDZ4v+aHEvo8g==}
+  nodemailer@10.1.4:
+    resolution: {integrity: sha512-EsMnOR2oRv4LGnWvHgcVYkkQ4O2j8KO4WTw6l+PHR4sOXo8SAgIraxtEnGDmotjbhv0hDsu3IuDIFZm8iXwO4A==}
     engines: {node: '>=20.0.0'}
 
   nodemon@3.0.1:
@@ -24502,13 +24519,13 @@ packages:
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
-  undici@6.29.1:
-    resolution: {integrity: sha512-EvRlUt/QqAEvXdQeRMYUfwOQsfzpDztykrG2owGEE/rBOBoYv9uF39ZzsNDh4lTFHhTr2XOZjKkYgueD12ZmGA==}
-    engines: {node: '>=18.17'}
-
   undici@7.30.1:
     resolution: {integrity: sha512-03KrMbjIFDWQR5RNPrSw3bd1r12JpyFQl9/yxjUbJtqkjmllqC5lFjZh6ujeuJCKr8EOQvRW872Oy/az+nLYxg==}
     engines: {node: '>=20.18.1'}
+
+  undici@8.12.4:
+    resolution: {integrity: sha512-8Mx+uNKKER2bA4AdtedkqRbwUCIJFr2nJckXRe5yrDqzePqwLP7VNcctN8/XdmDSbF7mS+jJKIszlL+vbam1VA==}
+    engines: {node: '>=22.19.0'}
 
   unicorn-magic@0.3.0:
     resolution: {integrity: sha512-+QBBXBCvifc56fsbuxZQ6Sic3wqqc3WWaqxs58gvJrcOuN83HGTCwz3oS5phzU9LthRNE9VrJCFCLUgHeeFnfA==}
@@ -25444,12 +25461,12 @@ snapshots:
       '@octokit/plugin-rest-endpoint-methods': 10.4.1(@octokit/core@5.2.2)
       '@octokit/request': 8.4.1
       '@octokit/request-error': 5.1.1
-      undici: 6.29.1
+      undici: 8.12.4
 
   '@actions/http-client@2.2.3':
     dependencies:
       tunnel: 0.0.6
-      undici: 6.29.1
+      undici: 8.12.4
 
   '@actions/io@1.1.3': {}
 
@@ -28194,7 +28211,7 @@ snapshots:
       discord-api-types: 0.38.52
       magic-bytes.js: 1.13.1
       tslib: 2.8.1
-      undici: 6.29.1
+      undici: 8.12.4
 
   '@discordjs/util@1.2.0':
     dependencies:
@@ -31241,7 +31258,7 @@ snapshots:
       openapi-sampler: 1.7.0
       outdent: 0.8.0
       set-cookie-parser: 2.7.1
-      undici: 6.29.1
+      undici: 8.12.4
     transitivePeerDependencies:
       - ajv
       - supports-color
@@ -36003,7 +36020,7 @@ snapshots:
       lodash.snakecase: 4.1.1
       magic-bytes.js: 1.13.1
       tslib: 2.8.1
-      undici: 6.29.1
+      undici: 8.12.4
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -39130,7 +39147,7 @@ snapshots:
       iconv-lite: 0.7.2
       libmime: 5.3.7
       linkify-it: 5.0.2
-      nodemailer: 10.0.14
+      nodemailer: 10.1.4
       punycode.js: 2.3.1
       tlds: 1.261.0
 
@@ -39201,6 +39218,15 @@ snapshots:
       linkify-it: 5.0.2
       mdurl: 1.0.1
       uc.micro: 1.0.6
+
+  markdown-it@14.3.3:
+    dependencies:
+      argparse: 2.0.1
+      entities: 4.5.0
+      linkify-it: 5.0.2
+      mdurl: 2.1.0
+      punycode.js: 2.3.1
+      uc.micro: 2.1.0
 
   markdown-table@3.0.4: {}
 
@@ -39331,6 +39357,8 @@ snapshots:
   mdn-data@2.23.0: {}
 
   mdurl@1.0.1: {}
+
+  mdurl@2.1.0: {}
 
   media-typer@0.3.0: {}
 
@@ -40377,7 +40405,7 @@ snapshots:
       shell-escape: 0.2.0
       ssh2: 1.16.0
 
-  nodemailer@10.0.14: {}
+  nodemailer@10.1.4: {}
 
   nodemon@3.0.1:
     dependencies:
@@ -44011,9 +44039,9 @@ snapshots:
 
   undici-types@6.21.0: {}
 
-  undici@6.29.1: {}
-
   undici@7.30.1: {}
+
+  undici@8.12.4: {}
 
   unicorn-magic@0.3.0: {}
 
